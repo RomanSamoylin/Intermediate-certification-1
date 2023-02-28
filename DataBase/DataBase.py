@@ -66,7 +66,7 @@ class Database:
         else:
             self.display.flash('Sorry! id is not found')
 
-    # def find_by_date(self, date):
+    # def find_by_date(self, date)2023:
 
 
     def list(self):
