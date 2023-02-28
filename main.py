@@ -1,16 +1,12 @@
-# This is a sample Python script.
+from View.Display import Display
+from Database.DataBase import Database
+from FileManager.XMLfileManager import XMLfileManager
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+d1 = Display()
+db = Database(d1)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+fm = XMLfileManager()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+db.notepad=fm.load()
+db.list()
