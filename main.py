@@ -1,5 +1,5 @@
 from View.Display import Display
-from Database.DataBase import Database
+from DataBase.DataBase import Database
 from FileManager.XMLfileManager import XMLfileManager
 
 d1 = Display()
